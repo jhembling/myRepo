@@ -1,0 +1,12 @@
+schedule_interval: "30 * * * *"
+tables:
+    - click
+    - imp
+    - info
+    - spot
+    - state
+    - track
+    - int
+transform_sql_path: adlogs/log_process
+parent_directory: 'stage_{}_logs_dev'
+log_path: 'log/*'
