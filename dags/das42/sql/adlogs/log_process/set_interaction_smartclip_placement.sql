@@ -1,4 +1,4 @@
-update airflow_db_{{ params.env }}.dimensions.{{ params.table }}
+update airflow_db_{{ params.env }}.transform_stage_{{ params.team_name }}.{{ params.table }}
 set {{ params.table }}.placementid = db.placementid
 from airflow_db_{{ params.env }}.dimensions.placement_smartclip db
 where

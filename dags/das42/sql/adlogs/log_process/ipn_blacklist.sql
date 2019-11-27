@@ -1,4 +1,4 @@
-update airflow_db_{{ params.env }}.dimensions.{{ params.table }}
+update airflow_db_{{ params.env }}.transform_stage_{{ params.team_name }}.{{ params.table }}
 set iab_flag = 'e'
 from
     airflow_db_{{ params.env }}.dimensions.ipn_exclude
